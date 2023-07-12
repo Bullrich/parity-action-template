@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node dist",
     "build": "ncc build --license LICENSE",
+    "fix": "eslint --fix 'src/**/*'",
+    "lint": "eslint 'src/**/*'"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "@octokit/webhooks-types": "^7.1.0"
   },
   "devDependencies": {
+    "@eng-automation/js-style": "^2.1.0",
     "@vercel/ncc": "^0.36.1",
     "typescript": "^5.1.6"
   }
