@@ -6,7 +6,7 @@ import { ActionLogger, GitHubClient } from "./types";
 export class PullRequestApi {
   constructor(
     private readonly api: GitHubClient,
-    private readonly logger: ActionLogger
+    private readonly logger: ActionLogger,
   ) {}
 
   getPrAuthor(pr: PullRequest): string {
